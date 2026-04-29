@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prepare-emo"
+version = "0.1.0"
+description = "Split-file SER benchmark preparation code for IEMOCAP, MELD, ESD, and MSP-IMPROV."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=1.5",
+  "scikit-learn>=1.2"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+prepare-emo = "ser_benchmarks.cli:main"
+
+[tool.setuptools]
+packages = ["ser_benchmarks"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

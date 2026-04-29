@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+manifests/
+splits/
+reports/
+
+# Local dataset copies should not be committed.
+IEMOCAP_full_release/
+MELD/
+ESD/
+MSP-IMPROV/
