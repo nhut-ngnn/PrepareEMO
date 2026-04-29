@@ -61,4 +61,3 @@ prepare-emo --help
 ```
 
 See [examples/commands.md](examples/commands.md) for dataset-specific commands.
-# PrepareEMO
